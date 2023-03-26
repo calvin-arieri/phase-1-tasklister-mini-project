@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
+  document.querySelector('form').addEventListener('submit', function (e){
+    e.preventDefault()
+   })
   const button = document.getElementsByTagName('input')[1]
 
   button.onclick = function(){
@@ -14,5 +17,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 }
-
 );
